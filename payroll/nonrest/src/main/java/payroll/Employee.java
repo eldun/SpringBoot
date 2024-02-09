@@ -6,10 +6,10 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
-@Entity
+@Entity // JPA annotation to make objects of this class ready for storage in a JPA-based data store.
 class Employee {
 
-  private @Id @GeneratedValue Long id;
+  private @Id @GeneratedValue Long id; // More JPA annotations to indicate id is the primary key, and should be auto-populated by the JPA provider.
   private String name;
   private String role;
 
