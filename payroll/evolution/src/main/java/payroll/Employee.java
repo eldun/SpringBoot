@@ -82,7 +82,7 @@ class Employee {
 
   @Override
   public int hashCode() {
-    return Objects.hash(this.id, this.name, this.role);
+    return Objects.hash(this.id, this.firstName, this.lastName, this.role);
   }
 
   @Override
